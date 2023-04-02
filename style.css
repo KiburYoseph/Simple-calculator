@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(152, 243, 190);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculatorbody {
+    width: 500px;
+    height: 650px;
+    border-radius: 25px;
+    box-shadow: 7px 12px 10px rgb(124, 124, 124);
+    background-color: rgb(155, 150, 150);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.outputscreen {
+    background-color: rgb(46, 72, 112);
+    color: white;
+    width: 80%;
+    height: 100px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.calculatorbuttons {
+    width: 80%;
+    height: 70%;
+    background-color: rgb(46, 72, 112);
+    color: white;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: repeat(5, 75px);
+    gap: 10px 27px;
+}
+
+.calculatorbuttons > label {
+    background-color: rgb(27, 41, 61);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms;
+    font-size: 20px;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+.calculatorbuttons > label:hover {
+    background-color: rgb(77, 105, 146);
+}
+
+.calculatorbuttons > label:active {
+    background-color: rgb(120, 156, 207);
+}
